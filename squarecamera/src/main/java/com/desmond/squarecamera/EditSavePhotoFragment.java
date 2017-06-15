@@ -84,6 +84,10 @@ public class EditSavePhotoFragment extends Fragment {
                 savePicture();
             }
         });
+
+        // KC: Workaround to prevent the confirmation UI from appearing.
+        savePicture();
+
     }
 
     private void rotatePicture(int rotation, byte[] data, ImageView photoImageView) {
